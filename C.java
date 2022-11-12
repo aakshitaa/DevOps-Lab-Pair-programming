@@ -17,3 +17,12 @@ class B extends Thread {
         }
     }
 }
+//code added by Shivam Kumar
+class C {
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B();
+        a.start();
+        b.start();
+    }
+}
