@@ -1,5 +1,5 @@
 import java.lang.Thread;
-
+//code by aakshita
 class A extends Thread {
     public void run() {
         for (int i = 0; i < 10; i++) {
@@ -15,14 +15,5 @@ class B extends Thread {
             System.out.println("from thread B: " + i);
             System.out.println("exit from B");
         }
-    }
-}
-
-class C {
-    public static void main(String[] args) {
-        A a = new A();
-        B b = new B();
-        a.start();
-        b.start();
     }
 }
